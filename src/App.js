@@ -54,7 +54,6 @@ const images =
     },
   ];
 
-
 class App extends React.Component {
 
   state = {
@@ -63,7 +62,8 @@ class App extends React.Component {
   };
 
   handleClickedImages = () => {
-    this.setState({ clickedImages: App.imgClick.imgId });
+    console.log(App.imgClick.imgId);
+    // this.setState({ clickedImages: App.imgClick.imgId });
   };
 
   handleIncrement = () => {
@@ -95,8 +95,10 @@ class App extends React.Component {
         <h3>Click on an image to earn points, but don't click any more than once!</h3>
 
         <div className="card">
-          <div className="img-container" onClick={this.handleIncrement}>
+          <div className="img-container" onClick={this.handleIncrement.imgClick} onClick={this.handleClickedImages.imgClick}>
+
             {images.map(image => <Image image={image.imgURL} key={image.id} imgClick={this.imgClick} imgId={image.id} />)}
+          
           </div>
         </div>
       </div>
