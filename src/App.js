@@ -54,7 +54,7 @@ const images =
     },
   ];
 
-  
+
 class App extends React.Component {
 
   state = {
@@ -74,6 +74,8 @@ class App extends React.Component {
 
     return (
       <div>
+        <h1>RICK and MORTY MEMORY GAME</h1>
+        <h2>Click on an image to earn points, but don't click any more than once!</h2>
         {images.map(image => <Image image={image.imgURL} key={image.id} imgClick={this.imgClick} imgId={image.id} />)}
         <div className="card text-center">
           <div className="card-header bg-primary text-white">
