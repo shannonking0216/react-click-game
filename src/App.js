@@ -72,9 +72,6 @@ class App extends React.Component {
 
   render() {
 
-    let score = "score";
-    let topScore = "topScore";
-
     return (
       <div>
         <ul className="nav">
@@ -85,22 +82,18 @@ class App extends React.Component {
             CLick an image to begin!
           </li>
           <li>
-            `Score: ${score} || Top Score: ${topScore}`
+            Score: {this.state.count}|| Top Score: {this.state.count}
           </li>
         </ul>
-        
-        <h1>RICK and MORTY CLICKY-MEMORY GAME</h1>
-        <h2>Click on an image to earn points, but don't click any more than once!</h2>
+
+        <h1>React Clicky Game</h1>
+        <h2>RICK and MORTY!</h2>
+        <h3>Click on an image to earn points, but don't click any more than once!</h3>
 
         <div className="card">
           <div className="img-container" onClick={this.handleIncrement}>
-              {images.map(image => <Image image={image.imgURL} key={image.id} imgClick={this.imgClick} imgId={image.id} />)}
-      
+            {images.map(image => <Image image={image.imgURL} key={image.id} imgClick={this.imgClick} imgId={image.id} />)}
           </div>
-
-          Score: {this.state.count}
-        
-
         </div>
       </div>
     );
