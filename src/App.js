@@ -62,6 +62,10 @@ class App extends React.Component {
     clickedImages: []
   };
 
+  handleClickedImages = () => {
+    this.setState({ clickedImages: App.imgClick.imgId });
+  };
+
   handleIncrement = () => {
     this.setState({ count: this.state.count + 1 });
   };
