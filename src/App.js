@@ -11,9 +11,50 @@ const images =
     { 
       id: 2, 
       imgURL: "url('https://clicky-game.netlify.com/assets/images/birdperson.png')" 
-    }
+    },
+    { 
+      id: 3, 
+      imgURL: "url('https://clicky-game.netlify.com/assets/images/jerry.png')" 
+    },
+    { 
+      id: 4, 
+      imgURL: "url('https://clicky-game.netlify.com/assets/images/beth.png')" 
+    },
+    { 
+      id: 5, 
+      imgURL: "url('https://clicky-game.netlify.com/assets/images/gianthead.png')" 
+    },
+    { 
+      id: 6, 
+      imgURL: "url('https://clicky-game.netlify.com/assets/images/summer.png')" 
+    },
+    { 
+      id: 7, 
+      imgURL: "url('https://clicky-game.netlify.com/assets/images/meeseeks.png')" 
+    },
+    { 
+      id: 8, 
+      imgURL: "url('https://clicky-game.netlify.com/assets/images/mr.png')" 
+    },
+    { 
+      id: 9, 
+      imgURL: "url('https://clicky-game.netlify.com/assets/images/evilmorty.png')" 
+    },
+    { 
+      id: 10, 
+      imgURL: "url('https://clicky-game.netlify.com/assets/images/rick.png')" 
+    },
+    { 
+      id: 11, 
+      imgURL: "url('https://clicky-game.netlify.com/assets/images/jessica.png')" 
+    },
+    { 
+      id: 12, 
+      imgURL: "url('https://clicky-game.netlify.com/assets/images/morty.png')" 
+    },
   ];
 
+  
 class App extends React.Component {
 
   state = {
@@ -43,9 +84,6 @@ class App extends React.Component {
             <button className="btn btn-primary" onClick={this.handleIncrement}>
               Increment
           </button>{" "}
-            <button className="btn btn-danger" onClick={this.handleDecrement}>
-              Decrement
-          </button>
           </div>
         </div>
       </div>
