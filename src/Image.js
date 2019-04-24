@@ -7,10 +7,11 @@ function Image(props) {
         <div>
             <div
                 role="img"
-                onClick={() => props.imgClick(props.imgId)}
+                onClick={() => props.handleClick(props.clicked)}
                 aria-label="click item"
                 className="click-item"
                 style={style}
+
             />
         </div>
     )
