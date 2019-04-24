@@ -74,18 +74,18 @@ class App extends React.Component {
     images: images
   };
 
-  function shuffle (images) {
-    for (let i = images.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [images[i], images[j]] = [images[j], images[i]];
-    }
-    return images;
-  }
+  // function shuffle (images) {
+  //   for (let i = images.length - 1; i > 0; i--) {
+  //     const j = Math.floor(Math.random() * (i + 1));
+  //     [images[i], images[j]] = [images[j], images[i]];
+  //   }
+  //   return images;
+  // }
 
   handleClick = (clicked) => {
     console.log(clicked);
     // this.setState({ clicked: this.state.true});
-    shuffle();
+    // shuffle();
   };
 
 // if state of clicked is false, 
